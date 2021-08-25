@@ -1,0 +1,38 @@
+//BENEFITS
+.benefits {
+  padding-top: 94px;
+  margin-bottom: 0;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__name {
+    color: $title-text-color;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+.concern {
+  display: flex;
+  content: "";
+  height: 120px;
+  border-radius: 4px;
+  background-size: contain;
+  background: $background-team-color;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}
+.benefits__block:not(:last-child) {
+  margin-right: 30px;
+}

@@ -1,0 +1,125 @@
+//FOOTER
+.footer {
+  background-color: $secondary-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__social-link-item {
+    width: 206px;
+    height: 80px;
+    margin-left: 70px;
+  }
+  &__social-title {
+    @extend %font-700-14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $secondary-text-color;
+  }
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__social-icon {
+    width: 20px;
+    height: 20px;
+    fill: $primary-background-color;
+  }
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $primary-background-color;
+    transition: background-color 250ms $time-function, fill 250ms $time-function;
+  }
+}
+.address {
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $secondary-address-color;
+  &__item {
+    margin-bottom: 9px;
+  }
+  &__text {
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-size: 14px;
+    color: $primary-background-color;
+  }
+  &__list {
+    color: $secondary-address-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+  &__link {
+    color: $secondary-address-color;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  margin: 0 auto;
+  align-items: baseline;
+}
+
+.footer__social-link:focus,
+.footer__social-link:hover {
+  background-color: $accent-color;
+}
+.footer-form {
+  margin-left: auto;
+  &__form-field {
+    display: flex;
+  }
+  &__form-title {
+    margin-bottom: 20px;
+  }
+  &__submit-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    padding: 10px 30px;
+    width: 200px;
+    height: 50px;
+    @extend %font-700-16px;
+    text-align: center;
+    color: $secondary-text-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+  }
+  &__btn-icon {
+    fill: $primary-background-color;
+    margin-left: 10px;
+  }
+  &__input {
+    margin: 0;
+    height: 50px;
+    width: 358px;
+    padding-left: 16px;
+    color: $secondary-text-color;
+    background-color: $secondary-background-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  }
+}
+.footer-form__submit-btn:hover,
+.footer-form__submit-btn:focus {
+  background-color: $primary--button-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
