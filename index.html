@@ -19,7 +19,8 @@
             <nav class="navigation">
                 <a class="logo" href="./index.html" lang="en">Web<span class="logo-dark">Studio</span></a>
                 <ul class="site-nav">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--active">Студия</a></li>
+                    <li class="site-nav__item"><a href="./index.html"
+                            class="site-nav__link site-nav__link--active">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
                     <li class="site-nav__item"><a href="/Контакты" class="site-nav__link">Контакты</a></li>
                 </ul>
@@ -139,7 +140,12 @@
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img src="images/img1.jpg" alt="Product Designer" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./images/team-desktop/desktop-team-one1x.jpg 1x, ./images/team-desktop/desktop-team-one2x.jpg 2x, ./images/team-desktop/desktop-team-one3x.jpg 3x" type="image/jpg" />
+                            <source media="(min-width: 768px)" srcset="./images/team-tablet/tablet-team-one1x.jpg 1x, ./images/team-tablet/tablet-team-one2x.jpg 2x ./images/team-tablet/tablet-team-one3x.jpg 3x" type="image/jpg" />
+                            <source media="(max-width: 767px)" srcset="./images/team-mobile/team-one1x.jpg 1x, ./images/team-mobile/team-one2x.jpg 2x, ./images/team-mobile/team-one3x.jpg 3x"type="image/jpg" />
+                            <img src="images/img1.jpg" alt="Product Designer" />
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p lang="en" class="team__function">Product Designer</p>
@@ -176,7 +182,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="images/img2.jpg" alt="Frontend Developer" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team-desktop/desktop-team-two1x.jpg 1x, ./images/team-desktop/desktop-team-two2x.jpg 2x, ./images/team-desktop/desktop-team-two3x.jpg 3x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team-tablet/tablet-team-two1x.jpg 1x, ./images/team-tablet/tablet-team-two2x.jpg 2x ./images/team-tablet/tablet-team-two3x.jpg 3x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team-mobile/team-two1x.jpg 1x, ./images/team-mobile/team-two2x.jpg 2x, ./images/team-mobile/team-two3x.jpg 3x"
+                                type="image/jpg" />
+                            <img src="images/img2.jpg" alt="Frontend Developer"/>
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p lang="en" class="team__function">Frontend Developer</p>
@@ -213,7 +230,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="images/img3.jpg" alt="Marketing" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team-desktop/desktop-team-three1x.jpg 1x, ./images/team-desktop/desktop-team-three2x.jpg 2x, ./images/team-desktop/desktop-team-three3x.jpg 3x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team-tablet/tablet-team-three1x.jpg 1x, ./images/team-tablet/tablet-team-three2x.jpg 2x ./images/team-tablet/tablet-team-three3x.jpg 3x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team-mobile/team-three1x.jpg 1x, ./images/team-mobile/team-three2x.jpg 2x, ./images/team-mobile/team-three3x.jpg 3x"
+                                type="image/jpg" />
+                            <img src="images/img3.jpg" alt="Marketing" />
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Николай Тарасов</h3>
                             <p lang="en" class="team__function">Marketing</p>
@@ -250,7 +278,18 @@
                         </div>
                     </li>
                     <li class="team__item">
-                        <img src="images/img4.jpg" alt="UI Designer" width="270" height="260">
+                        <picture>
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/team-desktop/desktop-team-four1x.jpg 1x, ./images/team-desktop/desktop-team-four2x.jpg 2x, ./images/team-desktop/desktop-team-four3x.jpg 3x"
+                                type="image/jpg" />
+                            <source media="(min-width: 768px)"
+                                srcset="./images/team-tablet/tablet-team-four1x.jpg 1x, ./images/team-tablet/tablet-team-four2x.jpg 2x ./images/team-tablet/tablet-team-four3x.jpg 3x"
+                                type="image/jpg" />
+                            <source media="(max-width: 767px)"
+                                srcset="./images/team-mobile/team-four1x.jpg 1x, ./images/team-mobile/team-four2x.jpg 2x, ./images/team-mobile/team-four3x.jpg 3x"
+                                type="image/jpg" />
+                            <img src="images/img4.jpg" alt="UI Designer" />
+                        </picture>
                         <div class="team__description">
                             <h3 class="team__name">Михаил Ермаков</h3>
                             <p lang="en" class="team__function">UI Designer</p>
