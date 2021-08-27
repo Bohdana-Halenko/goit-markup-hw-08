@@ -4,6 +4,7 @@
   margin-bottom: 0;
   &__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
   &__name {
@@ -13,10 +14,34 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
   &__text {
     font-size: 14px;
     line-height: 1.71;
+  }
+}
+@media screen and (max-width: 767px) {
+  .benefits__block {
+    width: 450px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__block {
+    width: 354px;
+    margin-bottom: 30px;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits__block {
+    width: 270px;
+  }
+  .benefits__block:not(:last-child) {
+    margin-right: 30px;
   }
 }
 .concern {
@@ -31,7 +56,4 @@
     width: 70px;
     height: 70px;
   }
-}
-.benefits__block:not(:last-child) {
-  margin-right: 30px;
 }
