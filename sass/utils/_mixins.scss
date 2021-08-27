@@ -24,3 +24,36 @@
 @mixin transition($type: border) {
   transition: $type 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@mixin font($fs, $lh, $ls) {
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+@mixin for-size($size) {
+  @if $size == before-mobile {
+    @media screen and (max-width: 479px) {
+      @content;
+    }
+  } @else if $size == mobile {
+    @media screen and (min-width: 480px) {
+      @content;
+    }
+  } @else if $size == before-tablet {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  } @else if $size == before-desktop {
+    @media screen and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media screen and (min-width: 1200px) {
+      @content;
+    }
+  }
+}
