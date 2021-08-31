@@ -3,7 +3,6 @@
   transition-duration: 250ms;
   transition-timing-function: $time-function;
 }
-
 @mixin transition2($firstProperty, $secondProperty) {
   transition-property: $firstProperty, $secondProperty;
   transition-duration: 250ms;
