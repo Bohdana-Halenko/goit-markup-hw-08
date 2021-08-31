@@ -77,16 +77,17 @@
   }
 }
 
-.site-nav__link--current {
+.site-nav__link--active {
   color: $accent-color;
   @media screen and (min-width: 768px) {
     position: relative;
   }
 }
 
-.site-nav__link--current::after {
+.site-nav__link--active::after {
   @media screen and (min-width: 768px) {
     display: block;
+    content: "";
     width: 100%;
     height: 4px;
     border-radius: 2px;
