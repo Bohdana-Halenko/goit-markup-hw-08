@@ -15,13 +15,17 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    margin-right: 88px;
     padding: 26px 0;
   }
 
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
     padding: 24px 0;
+  }
+}
+.logo-header {
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
   }
 }
 .navigation {

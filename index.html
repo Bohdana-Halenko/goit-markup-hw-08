@@ -16,7 +16,7 @@
     <!--Header-->
     <header class="header">
         <div class="container container-header">
-            <a class="logo" href="./index.html" lang="en">Web<span class="logo-dark">Studio</span></a>
+            <a class="logo logo-header" href="./index.html" lang="en">Web<span class="logo-dark">Studio</span></a>
             <nav class="navigation">
                 <ul class="site-nav">
                     <li class="site-nav__item"><a href="./index.html"
@@ -172,26 +172,40 @@
                 <ul class="activity__list">
                     <li class="activity__item">
                         <div class="activity__overlay">
-                            <img src="images/box1.jpg" alt="Пишем код" width="370" height="294">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/activity/act1-1x.jpg 1x, ./images/activity/act1-2x.jpg 2x, ./images/activity/act1-3x.jpg 3x"
+                                    type="image/jpg" />
+                                <img src="images/box1.jpg" alt="Пишем код"/>
+                            </picture>
                             <p class="activity__overlay-title">Десктопные приложения</p>
                         </div>
                     </li>
                     <li class="activity__item">
                         <div class="activity__overlay">
-                            <img src="images/box2.jpg" alt="Анализируем" width="370" height="294">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/activity/act2-1x.jpg 1x, ./images/activity/act2-2x.jpg 2x, ./images/activity/act2-3x.jpg 3x"
+                                    type="image/jpg" />
+                                <img src="images/box2.jpg" alt="Анализируем"/>
+                            </picture>
                             <p class="activity__overlay-title">Мобильные приложения</p>
                         </div>
                     </li>
                     <li class="activity__item">
                         <div class="activity__overlay">
-                            <img src="images/box3.jpg" alt="Делаем дизайн" width="370" height="294">
+                            <picture>
+                                <source media="(min-width: 1200px)"
+                                    srcset="./images/activity/act3-1x.jpg 1x, ./images/activity/act3-2x.jpg 2x, ./images/activity/act3-3x.jpg 3x"
+                                    type="image/jpg" />
+                                <img src="images/box3.jpg" alt="Делаем дизайн" />
+                            </picture>
                             <p class="activity__overlay-title">Дизайнерские решения</p>
                         </div>
                     </li>
                 </ul>
             </div>
         </section>
-
         <!--Our team-->
         <section class="team">
             <div class="container">
@@ -200,7 +214,7 @@
                     <li class="team__item">
                         <picture>
                             <source media="(min-width: 1200px)" srcset="./images/team-desktop/desktop-team-one1x.jpg 1x, ./images/team-desktop/desktop-team-one2x.jpg 2x, ./images/team-desktop/desktop-team-one3x.jpg 3x" type="image/jpg" />
-                            <source media="(min-width: 768px)" srcset="./images/team-tablet/tablet-team-one1x.jpg 1x, ./images/team-tablet/tablet-team-one2x.jpg 2x ./images/team-tablet/tablet-team-one3x.jpg 3x" type="image/jpg" />
+                            <source media="(min-width: 768px)" srcset="./images/team-tablet/tablet-team-one1x.jpg 1x, ./images/team-tablet/tablet-team-one2x.jpg 2x, ./images/team-tablet/tablet-team-one3x.jpg 3x" type="image/jpg" />
                             <source media="(max-width: 767px)" srcset="./images/team-mobile/team-one1x.jpg 1x, ./images/team-mobile/team-one2x.jpg 2x, ./images/team-mobile/team-one3x.jpg 3x"type="image/jpg" />
                             <img src="images/img1.jpg" alt="Product Designer" />
                         </picture>
@@ -245,7 +259,7 @@
                                 srcset="./images/team-desktop/desktop-team-two1x.jpg 1x, ./images/team-desktop/desktop-team-two2x.jpg 2x, ./images/team-desktop/desktop-team-two3x.jpg 3x"
                                 type="image/jpg" />
                             <source media="(min-width: 768px)"
-                                srcset="./images/team-tablet/tablet-team-two1x.jpg 1x, ./images/team-tablet/tablet-team-two2x.jpg 2x ./images/team-tablet/tablet-team-two3x.jpg 3x"
+                                srcset="./images/team-tablet/tablet-team-two1x.jpg 1x, ./images/team-tablet/tablet-team-two2x.jpg 2x, ./images/team-tablet/tablet-team-two3x.jpg 3x"
                                 type="image/jpg" />
                             <source media="(max-width: 767px)"
                                 srcset="./images/team-mobile/team-two1x.jpg 1x, ./images/team-mobile/team-two2x.jpg 2x, ./images/team-mobile/team-two3x.jpg 3x"
@@ -293,7 +307,7 @@
                                 srcset="./images/team-desktop/desktop-team-three1x.jpg 1x, ./images/team-desktop/desktop-team-three2x.jpg 2x, ./images/team-desktop/desktop-team-three3x.jpg 3x"
                                 type="image/jpg" />
                             <source media="(min-width: 768px)"
-                                srcset="./images/team-tablet/tablet-team-three1x.jpg 1x, ./images/team-tablet/tablet-team-three2x.jpg 2x ./images/team-tablet/tablet-team-three3x.jpg 3x"
+                                srcset="./images/team-tablet/tablet-team-three1x.jpg 1x, ./images/team-tablet/tablet-team-three2x.jpg 2x, ./images/team-tablet/tablet-team-three3x.jpg 3x"
                                 type="image/jpg" />
                             <source media="(max-width: 767px)"
                                 srcset="./images/team-mobile/team-three1x.jpg 1x, ./images/team-mobile/team-three2x.jpg 2x, ./images/team-mobile/team-three3x.jpg 3x"
@@ -341,7 +355,7 @@
                                 srcset="./images/team-desktop/desktop-team-four1x.jpg 1x, ./images/team-desktop/desktop-team-four2x.jpg 2x, ./images/team-desktop/desktop-team-four3x.jpg 3x"
                                 type="image/jpg" />
                             <source media="(min-width: 768px)"
-                                srcset="./images/team-tablet/tablet-team-four1x.jpg 1x, ./images/team-tablet/tablet-team-four2x.jpg 2x ./images/team-tablet/tablet-team-four3x.jpg 3x"
+                                srcset="./images/team-tablet/tablet-team-four1x.jpg 1x, ./images/team-tablet/tablet-team-four2x.jpg 2x, ./images/team-tablet/tablet-team-four3x.jpg 3x"
                                 type="image/jpg" />
                             <source media="(max-width: 767px)"
                                 srcset="./images/team-mobile/team-four1x.jpg 1x, ./images/team-mobile/team-four2x.jpg 2x, ./images/team-mobile/team-four3x.jpg 3x"
